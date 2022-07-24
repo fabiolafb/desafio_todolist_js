@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+width: 100%;
+background-color:azure ;
+}
+
+.container {
+    background-color: rgba(174, 200, 212, 0.963);
+    margin: 1.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+h1{
+    margin: 0;
+    padding: 1rem 0 0 2rem;
+}
+hr{
+    width: 95%;
+}
+/* ingreso de tareas */
+h3{
+    padding-left: 2rem;
+}
+.main__nueva-tarea--input {
+    margin-left: 2rem;
+} .main__nueva-tarea--input input {
+    width: 40rem;
+    height: 1.8rem;
+}
+#input-tarea{
+    font-size: 0.8rem;
+}
+.boton {
+    background-color: green;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: flex-start;
+}
+/* conteo */
+.main__conteo {
+    width: 30%;
+    margin-left: 2rem;
+}
+
+/* tabla resumen tareas */
+.main__resumen{
+    width: 70%;
+    margin: 1rem 0 1rem 1rem;
+}
+th{
+    width: 7rem;
+    text-align: left;
+}
+.btn-eliminar {
+    font-size: 0.8rem;
+    background-color: rgb(144, 54, 54);
+    color: white;
+}
+alert {
+    background-color: blue;
+}

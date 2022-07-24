@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Karla:wght@500;700&family=Lobster&family=Raleway:wght@300;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1>Todo List</h1>
+        <hr>
+        <!--ingreso de tareas--> 
+        <div class="main__nueva-tarea">
+            <h3>Nueva Tarea</h3>
+            <div class="main__nueva-tarea--input">
+                <input type="text" id="input-tarea" name="tarea" placeholder="Ingresa tarea" required/>
+                <button id="btnAgregar" class="boton" >Agregar </button>
+            </div>
+        </div>
+
+        <section class="section">
+            <!--conteo-->
+            <div class="main__conteo">
+                <p class="main__conteo--total">Total: <b><span id="total">0</span></b></p>
+                <p class="main__conteo--realizadas">Realizadas: <b><span id="realizadas">0</span></b></p>
+            </div>
+
+            <!--resumen de tareas-->
+            <div class="main__resumen">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th style="width: 2rem;">ID</th>
+                            <th style="width: 13rem;">Tarea</th>
+                            <th style="width: 3rem;"></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!--se inyecta el array de tareas-->
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
